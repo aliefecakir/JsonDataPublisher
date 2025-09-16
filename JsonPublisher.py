@@ -5,7 +5,7 @@ import paho.mqtt.client as mqtt
 
 BROKER = "your-broker"
 PORT = 1883
-TOPIC = "ypur-input-topic"
+TOPIC = "your-input-topic"
 
 client = mqtt.Client()
 
@@ -32,3 +32,4 @@ try:
 except KeyboardInterrupt:
     print("Stopping publisher...")
     client.disconnect()
+
